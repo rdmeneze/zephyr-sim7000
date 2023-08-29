@@ -1,0 +1,18 @@
+&uart4 {
+	status = "okay";
+    current-speed = <9600>;
+    sim7080 {
+        compatible = "simcom,sim7080";
+        label = "sim7080";
+        mdm-power-gpios = <&gpioa 6 GPIO_ACTIVE_LOW>;
+    };
+    
+    /*
+    status = "okay";
+	current-speed = <115200>;
+	gsm: gsm-modem {
+		compatible = "zephyr,gsm-ppp";
+	};
+    */
+};
+
