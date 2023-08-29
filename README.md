@@ -6,3 +6,4 @@ test implementation to validate the SIM7000 modem zephyr drive
 * initialize to the forked version: ``` west init -m https://github.com/rdmeneze/zephyr.git ```
 * update west: ``` west update ``` 
 * change the branch to the correct one: ``` git branch mdm_sim7000 ```
+* build the project: ``` west build -p always -b disco_l475_iot1 .  ``` 
