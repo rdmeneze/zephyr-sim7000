@@ -136,6 +136,13 @@ int main(void)
 }
 */
 
+#include <zephyr/kernel.h>
+#include <zephyr/sys/printk.h>
+#include <zephyr/drivers/modem/simcom-sim7000.h>
+
 int main(void){
 
+	mdm_sim7000_power_on();
+	
+	return 0;
 }
